@@ -1,11 +1,13 @@
-import React from 'react'
+// import React from 'react'
  type footersectionporps={
-    brand:string
+    brand:string,
+    count:number
  }
 const FooterSection = (props:footersectionporps) => {
   return (
     <div>
       <p className='footerSection'>Footer{props.brand}</p>
+      <h1>{props.count}</h1>
     </div>
   )
 }

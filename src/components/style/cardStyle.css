@@ -1,0 +1,21 @@
+.cardContainer{
+    width: 20vw;
+    height: 35vh;
+    border:2px solid gray;
+    border-radius: 2px;
+    
+}
+
+.heading{
+   color:#ff0000;
+}
+.button{
+    border:1px solid gray;
+    margin:2px;
+    padding:4px;
+    border-radius: 2px;
+}
+img{
+    width: 5vw;
+    height: 10vh;
+}

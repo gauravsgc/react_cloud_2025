@@ -4,16 +4,19 @@
 import './App.css'
 import LeftSide from './components/aside-left'
 import RightSide from './components/aside-right'
+import Card from './components/card-component'
 import FooterSection from './components/footer-section'
 import Header from './components/header'
-
+import Img from './assets/images/img1.jpg';
+import Img1 from './assets/images/img2.jpg';
+import Img2 from './assets/images/img3.jpg';
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
      
-      <header className='header_section'>
+      {/* <header className='header_section'>
         <Header />
       </header>
       <div className='middle_section'>
@@ -25,12 +28,15 @@ function App() {
         </aside>
       </div>
       <footer>
-      <FooterSection brand='ford'/>
-      <FooterSection brand='maruti'/>
-      </footer>
+      <FooterSection brand='ford' count={20} />
+      <FooterSection brand='maruti' count={30} />
+      </footer> */}
 
-
-
+<div className='container'>
+<Card imgsrc={Img} topic='react js' description='react js is libary'/>
+<Card  imgsrc={Img1}topic='angular js' description='angular js is framework'/>
+<Card  imgsrc={Img2}topic='node js' description='node is a js environement'/>
+</div>
       {/* <div> */}
       {/* <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

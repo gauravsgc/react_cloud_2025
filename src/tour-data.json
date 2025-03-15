@@ -1,0 +1,29 @@
+[
+    {
+      
+      "name": "Andrha to banglore",
+      "Price":2000
+     
+
+    },
+    {
+      "name": "Andrha to chennai",
+      "Price":3000
+    },
+    {
+     "name": "Andrha to kashmir",
+      "Price":6000
+    },
+    {
+     "name": "Andrha to pune",
+      "Price":4000
+    },
+    {
+        "name": "Andrha to gurugram",
+         "Price":8000
+       },
+       {
+        "name": "najafgarh to gurgaon",
+         "Price":200
+       }
+  ]

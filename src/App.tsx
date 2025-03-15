@@ -10,8 +10,30 @@ import Header from './components/header'
 import Img from './assets/images/img1.jpg';
 import Img1 from './assets/images/img2.jpg';
 import Img2 from './assets/images/img3.jpg';
+import Tour from './components/Tour-component'
+import data from './tour-data.json';
+import { useEffect, useState } from 'react'
+import FirstState from './components/Hook/first-state'
 function App() {
   // const [count, setCount] = useState(0)
+//state:- 
+const [info,setInfo]=useState<{ name: string; Price: number; }[]>([]);//function:hook
+
+
+//use state:
+//to define value [variable]
+useEffect(()=>{
+  setInfo(data);
+  
+  //state updates in next render
+  
+},[])
+//useeffect is a hook in react js
+//it takes two argument
+//1:callback function
+//2:dependency array
+
+//[]:blank:only page loades[mounting phase] it works
 
   return (
     <>
@@ -32,11 +54,32 @@ function App() {
       <FooterSection brand='maruti' count={30} />
       </footer> */}
 
-<div className='container'>
+{/* <div className='container'>
 <Card imgsrc={Img} topic='react js' description='react js is libary'/>
 <Card  imgsrc={Img1}topic='angular js' description='angular js is framework'/>
 <Card  imgsrc={Img2}topic='node js' description='node is a js environement'/>
-</div>
+</div> */}
+
+
+
+
+
+{/* <div style={{display:'flex',gap:'2em'}}>
+{
+  info.map((e,index)=>
+    <div key={index}>
+    <Tour name={e.name} Price={e.Price}/>
+    </div>
+    
+  )
+}
+
+
+</div> */}
+
+
+<FirstState/>
+
       {/* <div> */}
       {/* <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
